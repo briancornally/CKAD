@@ -1,0 +1,7 @@
+# tmux
+
+cat << EOF > ~/.tmux.conf
+set -g default-shell /bin/bash
+set -g mouse on
+bind -n C-x setw synchronize-panes
+EOF

@@ -1,0 +1,41 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - containerd
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - nfs-common
+  - nfs-kernel-server
+write_files:
+  - owner: root:root
+    path: /etc/modules-load.d/containerd.conf
+    content: |
+      overlay
+      br_netfilter
+  - owner: root:root
+    path: /etc/sysctl.d/99-kubernetes-cri.conf
+    content: |
+      net.bridge.bridge-nf-call-iptables  = 1
+      net.ipv4.ip_forward                 = 1
+      net.bridge.bridge-nf-call-ip6tables = 1
+  - owner: root:root
+    path: /etc/apt/sources.list.d/kubernetes.list
+    content: |
+      deb https://apt.kubernetes.io/ kubernetes-xenial main
+runcmd:
+  - modprobe overlay
+  - modprobe br_netfilter
+  - sysctl --system
+  - apt-get update 
+  - mkdir -p /etc/containerd/
+  - containerd config default > /etc/containerd/config.toml
+  - sed -i '/ SystemdCgroup / s/false/true/' /etc/containerd/config.toml
+  - systemctl restart containerd
+  - curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+  - sudo apt-get update
+  - VERSION=1.21.0-00
+  - apt-get install -y kubelet=$VERSION kubeadm=$VERSION kubectl=$VERSION
+  - apt-mark hold kubelet kubeadm kubectl containerd
+  - systemctl enable kubelet.service
+  - systemctl enable containerd.service

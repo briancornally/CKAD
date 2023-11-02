@@ -1,0 +1,21 @@
+azureuser
+20.212.50.125 c1-cp1
+20.212.53.211 c1-node1
+20.212.53.207 c1-node2
+20.212.50.146 c1-node3
+
+ssh aen@c1-cp1
+ssh aen@c1-node1
+ssh aen@c1-node2
+ssh aen@c1-node3
+
+ip4=$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1)
+echo $ip4 $HOSTNAME 
+
+cat <<EOF | sudo tee -a /etc/hosts
+10.0.0.4 c1-cp1
+10.0.0.5 c1-node1
+10.0.0.6 c1-node2
+10.0.0.7 c1-node3
+EOF
+

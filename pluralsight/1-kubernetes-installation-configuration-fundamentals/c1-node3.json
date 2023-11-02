@@ -1,0 +1,102 @@
+{
+  "ResourceGroupName": "k8s-bm",
+  "Id": "/subscriptions/c568096a-90af-455c-91d0-31314d3fbbf5/resourceGroups/k8s-bm/providers/Microsoft.Compute/virtualMachines/c1-node3",
+  "VmId": "98cc58d2-18eb-4a70-af67-5ab35817fb95",
+  "Name": "c1-node3",
+  "Type": "Microsoft.Compute/virtualMachines",
+  "Location": "southeastasia",
+  "ExtendedLocation": null,
+  "LicenseType": null,
+  "Tags": {},
+  "AvailabilitySetReference": null,
+  "DiagnosticsProfile": null,
+  "Extensions": [],
+  "HardwareProfile": {
+    "VmSize": "Standard_D2s_v3",
+    "VmSizeProperties": null
+  },
+  "InstanceView": null,
+  "NetworkProfile": {
+    "NetworkInterfaces": [
+      {
+        "Primary": null,
+        "DeleteOption": null,
+        "Id": "/subscriptions/c568096a-90af-455c-91d0-31314d3fbbf5/resourceGroups/k8s-bm/providers/Microsoft.Network/networkInterfaces/c1-node3"
+      }
+    ],
+    "NetworkApiVersion": null,
+    "NetworkInterfaceConfigurations": null
+  },
+  "SecurityProfile": null,
+  "OSProfile": {
+    "ComputerName": "c1-node3",
+    "AdminUsername": "azureuser",
+    "AdminPassword": null,
+    "CustomData": null,
+    "WindowsConfiguration": null,
+    "LinuxConfiguration": {
+      "DisablePasswordAuthentication": true,
+      "Ssh": {
+        "PublicKeys": [
+          {
+            "Path": "/home/azureuser/.ssh/authorized_keys",
+            "KeyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJsd46BjlvcS3FrhPPSKEZkhPOvSR0bJT7p4ixCm+6Uj84A4B55b6i6wr3ur+KGPSdyXh6T5PrvsNgNQ9FekzEpxGUXlRCaGD6DSFAChKc8xKk5j5C4w8gShNCavIkyyTXddv/RhOb2JerdhU2uYqM0cY5bwM5+J6G6aWGhrFpwitSzoqOBjN3kMquaL/J2Ld9XqfIIP7P+nWguPbEA69a9GKWTqXGBzA71CJ5HVC1TwoYHRYb8Oo2SLOvdodEV7pESLkvVGNf60S5LbwAq8GN36g5nLoSM1M9Yr31arJWEaBz3/qJ3z5hEu+w2oY/RFKRbj5/c9/Ziyp5GxoFaLpsDikOuswwXoDxmasJCRZ/JPmiT6mRSZsKQ9hXxaim5G2AvQ8U5oe+fCFlcPZNbTJeRszZdmid4WO1V0Hd7yDn5yrjjH7Pq+d6hvHBGwh9LwADW9aTpq/83Tm0y3Uzd6w6EN5i1I2CJ1hVJTQzaNkRAvbY8/NsB7JGxAACRTVukcs= brian.cornally@gmail.com"
+          }
+        ]
+      },
+      "ProvisionVMAgent": true,
+      "PatchSettings": {
+        "PatchMode": "ImageDefault",
+        "AssessmentMode": "ImageDefault"
+      }
+    },
+    "Secrets": [],
+    "AllowExtensionOperations": true,
+    "RequireGuestProvisionSignal": true
+  },
+  "BillingProfile": null,
+  "Plan": null,
+  "ProvisioningState": "Succeeded",
+  "StorageProfile": {
+    "ImageReference": {
+      "Publisher": "Canonical",
+      "Offer": "UbuntuServer",
+      "Sku": "18.04-LTS",
+      "Version": "latest",
+      "ExactVersion": "18.04.202110120",
+      "SharedGalleryImageId": null,
+      "Id": null
+    },
+    "OsDisk": {
+      "OsType": "Linux",
+      "EncryptionSettings": null,
+      "Name": "c1-node3",
+      "Vhd": {
+        "Uri": "https://k8sbmdisks.blob.core.windows.net/vhds/c1-node320211024205034.vhd"
+      },
+      "Image": null,
+      "Caching": "ReadWrite",
+      "WriteAcceleratorEnabled": null,
+      "DiffDiskSettings": null,
+      "CreateOption": "FromImage",
+      "DiskSizeGB": 30,
+      "ManagedDisk": null,
+      "DeleteOption": "Detach"
+    },
+    "DataDisks": []
+  },
+  "DisplayHint": 0,
+  "Identity": null,
+  "Zones": null,
+  "FullyQualifiedDomainName": null,
+  "AdditionalCapabilities": null,
+  "ProximityPlacementGroup": null,
+  "Host": null,
+  "VirtualMachineScaleSet": null,
+  "EvictionPolicy": null,
+  "Priority": null,
+  "HostGroup": null,
+  "CapacityReservation": null,
+  "RequestId": "b393e339-4df8-4803-b494-35bcc95c49b8",
+  "StatusCode": 200
+}

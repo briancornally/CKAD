@@ -1,0 +1,30 @@
+azureuser
+20.212.50.125 c1-cp1
+20.212.53.211 c1-node1
+20.212.53.207 c1-node2
+20.212.50.146 c1-node3
+
+ssh aen@c1-cp1
+ssh aen@c1-node1
+ssh aen@c1-node2
+ssh aen@c1-node3
+
+ip4=$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1)
+echo $ip4 $HOSTNAME 
+
+cat <<EOF | sudo tee -a /etc/hosts
+10.0.0.4 c1-cp1
+10.0.0.5 c1-node1
+10.0.0.6 c1-node2
+10.0.0.7 c1-node3
+10.0.0.8 c1-storage
+EOF
+
+sudo apt-get update
+VERSION=1.21.0-00
+sudo apt-get install -y kubelet=$VERSION kubeadm=$VERSION kubectl=$VERSION
+sudo apt-mark hold kubelet kubeadm kubectl containerd
+sudo systemctl enable kubelet.service
+sudo systemctl enable containerd.service
+sudo kubeadm join 172.16.94.4:6443 --token abcdef.0123456789abcdef \
+        --discovery-token-ca-cert-hash sha256:b544789e235b671bad710baf98da5635c48e4ac1e74096b1395ff9bd5ffe7e79 

@@ -1,0 +1,71 @@
+- https://artifacthub.io
+- https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-administrator-cka-and-certified-kubernetes-application-developer-ckad
+- https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks
+- https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#is-there-training-to-prepare-for-the-certification-exam
+- https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/candidate-requirements
+- https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-user-interface#lf_remote_desktop69fKd8/s/-M5QaeeC1mG9VndIpgJe/certification/lf-handbook2/exam-user-interface#lf_remote_desktop
+- https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad Exam Tips
+- https://github.com/kodekloudhub/certified-kubernetes-administrator-course/tree/master
+- https://github.com/kodekloudhub/community-faq#can-i-use-an-external-monitor
+- https://github.com/mmumshad/kubernetes-the-hard-way
+- https://killer.sh/faq
+- https://kind.sigs.k8s.io/docs/user/ingress/
+- https://kodekloud.com/learning-paths
+- https://kodekloud.com/lessons/configuration-2/
+- https://kodekloud.com/lessons/services-networking-2/
+- https://kodekloud.com/topic/ingress-networking-1
+- https://kodekloud.com/topic/init-containers-3/
+- https://kodekloud.com/topic/jobs-and-cronjobs/?utm_source=udemy&utm_medium=labs&utm_campaign=kubernetes
+- https://kodekloud.com/topic/labs-validating-and-mutating-admission-controllers-5
+- https://kodekloud.com/topic/monitoring-2/?utm_source=udemy&utm_medium=labs&utm_campaign=kubernetes
+- https://kodekloud.com/topic/multi-container-pods-3/?utm_source=udemy&utm_medium=labs&utm_campaign=kubernetes
+- https://kodekloud.com/topic/node-affinity-3
+- https://kodekloud.com/topic/node-affinity-3/
+- https://kodekloud.com/topic/pods-4/
+- https://kodekloud.com/topic/practice-test-cluster-roles-4/?utm_source=udemy&utm_medium=labs&utm_campaign=kubernetes
+- https://kodekloud.com/topic/practice-test-introduction-4/
+- https://kodekloud.com/topic/practice-test-introduction-4/
+- https://kodekloud.com/topic/resource-limits-2/?utm_source=udemy&utm_medium=labs&utm_campaign=kubernetes
+- https://kodekloud.com/topic/rolling-updates-rollbacks-2/?utm_source=udemy&utm_medium=labs&utm_campaign=kubernetes
+- https://kodekloud.com/topic/security-contexts-3
+- https://kubernetes.github.io/ingress-nginx/examples/rewrite
+- https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity
+- https://kubernetes.io/docs/home/ access this documentation in exam
+- https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-em-ingress-em-
+- https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+- https://kubernetes.io/docs/reference/kubectl/conventions/
+- https://kubernetes.io/docs/reference/kubectl/overview/
+- https://kubernetes.io/docs/tasks/ access this documentation in exam
+- https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/
+- https://kubernetes.io/docs/tasks/debug/debug-cluster/
+- https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-kubectl-convert-plugin
+- https://nitishblog.hashnode.dev/top-13-beginner-friendly-tools-for-kubernetes-beginners
+- https://podcasts.apple.com/us/podcast/podctl-enterprise-kubernetes/id1270983443
+- https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/ curriculum
+- https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/ v1.27
+- https://training.linuxfoundation.org/training/introduction-to-kubernetes/ FREE
+- https://training.linuxfoundation.org/training/kubernetes-fundamentals/ $299
+- https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/ 299
+- https://uklabs.kodekloud.com/topic/ingress-networking-2/
+- https://uklabs.kodekloud.com/topic/labs-admission-controllers-5/
+- https://uklabs.kodekloud.com/topic/labs-install-helm-2/
+- https://uklabs.kodekloud.com/topic/logging-2/
+- https://uklabs.kodekloud.com/topic/persistent-volumes-5/
+- https://uklabs.kodekloud.com/topic/practice-test-custom-resource-definition-2/
+- https://uklabs.kodekloud.com/topic/practice-test-deployment-strategies-2/
+- https://uklabs.kodekloud.com/topic/secrets-4/
+- https://uklabs.kodekloud.com/topic/service-account-2/
+- https://uklabs.kodekloud.com/topic/taints-and-tolerations-3/
+- https://unofficial-kubernetes.readthedocs.io/en/latest/
+- https://vim.rtorr.com
+- https://www.cncf.io/certification/candidate-handbook Candidate Handbook
+- https://www.cncf.io/certification/cka/faq/
+- https://www.cncf.io/certification/ckad/ - Certified Kubernetes Application Developer
+- https://www.manning.com/books/kubernetes-in-action
+- https://gist.github.com/angelo-v/e0208a18d455e2e6ea3c40ad637aac53 # JWT decode
+
+
+
+https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/
+https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/
+https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/

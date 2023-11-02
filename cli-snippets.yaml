@@ -1,0 +1,25 @@
+spec:
+containers:
+
+- env:
+  - name: APP_COLOR
+    valueFrom:
+    configMapKeyRef:
+    key: APP_COLOR
+    name: webapp-config-map
+
+securityContext:
+  runAsUser
+
+serviceAccount: dashboard-sa
+automountServiceAccountToken: false
+
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: color
+                operator: In
+                values:
+                - blue
